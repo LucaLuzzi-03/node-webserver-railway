@@ -1,0 +1,18 @@
+import http from 'http';
+
+
+http.createServer( ( req, res ) => {
+
+    // res.writeHead(200, { 'Content-Type': 'text/plain' });
+    // res.writeHead(200, { 'Content-Type': 'application/json' });
+    // res.writeHead(200, { 'Content-Type': 'application/csv' });
+
+    // res.setHeader('Content-Disposition', 'attachment; filename=lista.csv');
+
+    res.write('Hola mundo');
+    res.end();
+
+})
+.listen( 8080 );
+
+console.log('Escuchando en puerto', 8080);
